@@ -1,0 +1,12 @@
+Passo a passo para o robo Alexia -30
+
+- Alexia -30.A:
+    * Pega as URLs passadas pelo usuario e filtra os links apenas de anuncios, armazenando-os em um banco de dados.
+    - Alexia -30.A1:
+        * Esse robo será uma possível extenção de seu robo pai, A idéia é que ele consiga armazenar dados que sejam utilizados em futuras clonagens de dados, referente a essa ação que no caso é o posfixo da URL. EX: https://www.dominiodaimobiliaria.com.br/Imoveis. Haverá uma tabela apenas para dados de métricas;
+- Alexia -30.B:
+    * Pega os links armazenados e vai em cada um deles e pega os dados da pagina, ele já filtra utilizando o sistema curl para deixar de uma maneira legivel para o proximo robo.
+- Alexia -30.C:
+    * Pega os dados enviados pelo -30.B e filtram apenas os dados que interessam utilizando RegEx.
+- Alexia -30.D:
+    * Pega os dados enviados pelo -30.C e armazena no banco de dados;
